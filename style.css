@@ -68,6 +68,12 @@ h6{
     letter-spacing: 6px;
 
 }
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
 span{
     font-family: 'Roboto Condensed', cursive;
     font-size: 1.5rem;
@@ -75,12 +81,6 @@ span{
 }
 
 
-.bg-brick {
-    background-color: var(--third-color);
-    background-image: url("asset/image/bg.jpg");
-    background-size: 50%;
-    z-index: -10;
-}
 .border-blue-bottom {
     position: relative;
 }
@@ -121,11 +121,11 @@ span{
     box-shadow: 0px 4px 19px #FFACDF;
 }
 
-/* .neon-checked{
-    height: 50px;
-    width: 50px;
-    filter: invert(82%) sepia(2%) saturate(4566%) hue-rotate(289deg) brightness(107%) contrast(101%) drop-shadow(0 0.5rem 1rem var(--secondary-color));
-} */
+.highlight--1{
+    transform:scale(1.08);
+    opacity:1 !important;
+    transition:.5s ease-out !important;
+}
 
 .icon-neon-medium {
     height: 30px;
@@ -133,16 +133,54 @@ span{
     filter: invert(82%) sepia(2%) saturate(4566%) hue-rotate(289deg) brightness(107%) contrast(101%) drop-shadow(0 0.5rem 1rem var(--secondary-color));
 }
 
+.icon-nav {
+    width:25px;
+    margin-left: 1rem;
+}
+
+.nav-container-top {
+    position: absolute;
+    top:0;
+    right: 0;
+    transition:0.8s ease-out;
+}
+
+.nav-container-mid {
+    position: absolute;
+    top:40%;
+    right: 0;
+    transition:0.8s ease-out;
+}
+
+.nav-container-bot {
+    position: absolute;
+    top:90%;
+    right: 0;
+    transition:0.8s ease-out;
+}
+
 .project {
     position: relative;
+    opacity:.5;
+    transition:.6s cubic-bezier(.15,.5,.35,1);
+    width:auto;
 }
+
+.project-title {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 #nav {
-    right:6rem;
-    top: 6rem;
+    z-index: 1000;
+    height: 100vh;
+    right: 6rem;
+    top: 0rem;
+    padding: 2rem 0;
+    width: 150px;
 }
-
-
  /* HEADER */
 #header {
     height: 100vh;
@@ -160,7 +198,6 @@ span{
     position: relative;
     text-align: end;
 }
-
 #header_titledev #header-circle{
     position: absolute;
     z-index: -1;
@@ -169,11 +206,10 @@ span{
     bottom:-275px;
     width: 750px;
 }
-
 #header_titlename{
     position: relative;
 }
-#header-square{
+#header_square{
     position: absolute;
     z-index: -1;
     filter: brightness(1.8) blur(3.5px);
@@ -194,6 +230,7 @@ span{
     width: 100%;
     margin: 150px 0;
 }
+
 #whoiam{
     height: 100vh;
     width: 100%;
@@ -209,6 +246,15 @@ span{
     height: 500px;
     border-radius: inherit;
 }
+#whoiam_bg{
+    position: absolute;
+    margin-top: 800px;
+    left : 0%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 600px;
+}
+
 #skills{
     height: auto;
     width: 100%;
@@ -253,14 +299,8 @@ span{
     height: 100vh;
     width: 100%;
 }
-#triangle{
-    position: absolute;
-    margin-top: 800px;
-    left : 0%;
-    transform: translate(-50%, -50%);
-    height: 600px;
-    width: 600px;
-}
+
+
 #projects{
     width: 100%;
     margin : 150px auto;
@@ -268,44 +308,30 @@ span{
 #projects_title{
     margin-bottom: 80px;
 }
-
 #projects_container{
     position:relative;
 }
-#projects_progressBar_1{
-    /* content:"";
-    position: absolute;
-    display: block;
-    top: 0; */
-    /* left: 170px; */
-    /* left: -50px;
-    width: 2px;
-    height: 0%;
-    padding:0;
-    background-color: var(--fifth-color); */
-}
-
-.progressBar {
-    content:"";
-    position: absolute;
-    display: block;
-    top: 0;
-    /* left: 170px; */
-    left: -50px;
-    width: 2px;
-    height: 0%;
-    padding:0;
-    background-color: var(--fifth-color);
-}
-
 
 #contact{
     width: 100%;
     height: 300px;
+    margin-top : 24rem;
 }
 
-.pt-25{
-    padding-top : 15rem;
+
+.carousel-indicators [data-bs-target]{
+    background-color : #ff9f24;
+}
+
+.glow{
+    filter:drop-shadow(0 0 3px #D9D9D9);
+}
+.modal-content {
+    background-color: #ffffff17;
+}
+.modal-dialog {
+    max-width: 1050px;
+    max-height: 650px;
 }
 
 .txt-main {
@@ -337,6 +363,16 @@ span{
     background-color: var(--fourth-color);
 }
 
+.opa-0 {
+    opacity: 0
+}
+.opa-100 {
+    opacity: 100;
+    transition:.6s cubic-bezier(1.15,.5,.35,1);
+}
+.pt-25{
+    padding-top : 15rem;
+}
 .zeyada {
     font-family: 'Zeyada', cursive;
     font-size: 4.3rem;
@@ -347,7 +383,6 @@ span{
     width: 46px !important;
     height: 46px ! important;
     transition: all 0.5s smooth;
-
 }
 
 /* ANIMATION scrolling-text */
