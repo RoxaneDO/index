@@ -53,26 +53,56 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
+        var scrollBottom = $(window).scrollTop() + $(window).height() > $(document).height() - 20;
+        var whoiAmPos = document.getElementById('whoiam').getBoundingClientRect();
+        var skillsPos = document.getElementById('skills').getBoundingClientRect();
+        var projectsPos = document.getElementById('projects').getBoundingClientRect();
+        var triangleNav = document.querySelectorAll('#nav_triangle a');
+        var squareNav = document.querySelectorAll('#nav_square a');
+        var circleNav = document.querySelectorAll('#nav_circle a');
+        var quartWin = $(window).height()/4;
+
 
         if (scroll > 0){
             nav.classList.remove("nav-container-mid")
             nav.classList.add("nav-container-top")
         }
-        if (scroll > 20){
+        if (scroll > 20 && !scrollBottom){
             nav.classList.remove("nav-container-bot")
             nav.classList.remove("nav-container-top")
             nav.classList.add("nav-container-mid")
+
+            if(whoiAmPos.top > 0 ){
+                turnOnOff(triangleNav[0], triangleNav[0])
+            }
+
+            if(whoiAmPos.top <= quartWin && skillsPos.top > quartWin){
+                turnOnOff(triangleNav[0], squareNav[0])
+            }
+
+            if(skillsPos.top <= quartWin && projectsPos.top > quartWin){
+                turnOnOff(squareNav[0], triangleNav[0]);
+                turnOnOff(squareNav[0], circleNav[0]);
+
+            }
+            if(projectsPos.top <= quartWin ){
+                turnOnOff(circleNav[0], squareNav[0]);
+            }
         }
 
-        if ($(window).scrollTop() + $(window).height() > $(document).height() - 20){
+        if (scrollBottom){
             nav.classList.remove("nav-container-mid")
             nav.classList.add("nav-container-bot")
         }
     })
 });
+function turnOnOff(turnOn, turnOff) {
+    turnOn.classList.add('opa-100');
+    turnOff.classList.remove('opa-100');
+    turnOff.classList.add('opa-20');
+}
 
-
-// VIEWPORT
+// VIEWPORT project
 var getElementsInArea = (function(docElm){
     var viewportHeight = docElm.clientHeight;
 
