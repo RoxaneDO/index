@@ -63,23 +63,23 @@ $(document).ready(function() {
         var quartWin = $(window).height()/4;
 
         // RESPONSIVE VERTICAL
-        if($(window).height() > 1600){
-            if (scroll > 0 && !scrollBottom ){
-                nav.classList.remove("nav-container-mid")
-                nav.classList.add("nav-container-top")
-            }
-
-            if(scroll > 20){
-                nav.classList.remove("nav-container-bot")
-                nav.classList.remove("nav-container-top")
-                nav.classList.add("nav-container-mid")
-            }
-
-            if(scrollBottom){
-                nav.classList.remove("nav-container-mid")
-                nav.classList.add("nav-container-bot")
-            }
-        }
+        // if($(window).width() > 1600){
+        //     if (scroll > 0 && !scrollBottom ){
+        //         nav.classList.remove("nav-container-mid")
+        //         nav.classList.add("nav-container-top")
+        //     }
+        //
+        //     if(scroll > 20){
+        //         nav.classList.remove("nav-container-bot")
+        //         nav.classList.remove("nav-container-top")
+        //         nav.classList.add("nav-container-mid")
+        //     }
+        //
+        //     if(scrollBottom){
+        //         nav.classList.remove("nav-container-mid")
+        //         nav.classList.add("nav-container-bot")
+        //     }
+        // }
 
         //OPACITY
         if(whoiAmPos.top > 0 ){
@@ -172,7 +172,9 @@ function parallaxe(element, vitesse, direction)
 
             var widthW = onresize();
 
-            if(widthW > 560){
+            console.log(widthW)
+
+            if(widthW > 980){
                 switch( direction )
                 {
                     case 'top':
@@ -219,7 +221,7 @@ function paralaxeScale(element, vitesse){
         var varWidth = width + (scroll * vitesse);
         var widthW = $(window).width();
 
-        if(varWidth >= widthWin){
+        if(varWidth >= widthW){
             $(element).css('height', varWidth + 'px');
             $(element).css('width, 100%');
         }

@@ -138,7 +138,6 @@ span{
     position: relative;
     opacity:.5;
     transition:.6s cubic-bezier(.15,.5,.35,1);
-    width:auto;
 }
 .project-title {
     display:flex;
@@ -196,7 +195,6 @@ span{
  /* HEADER */
 #header {
     height: 100vh;
-    width: 100%;
 }
 #header_container_openToWork {
     animation: shine_bg 5s forwards, flicker 3s infinite;
@@ -630,39 +628,26 @@ span{
     li::marker {
         color: var(--fifth-color);
     }
-    /* #nav {
-        z-index: 1000;
-        height: 40px;
-        right: 0;
-        top: 0rem;
-        padding: 2rem 0;
-        width: 100%;
-    }
-    #nav_container_icons div{
-        opacity: 1;
-        order:2;
-    }
-    #nav_container_icons svg{
-        opacity : 1;
-        order:1;
-    }< */
 }
 
-@media (max-width: 1600px){
-    /* #nav {
-        z-index: 1000;
-        height: 40px;
-        right: 0;
-        top: 0rem;
-        padding: 2rem 0;
-        width: 100%;
+@media (max-width: 992px){
+    #header {
+        height: 100%;
     }
-    #nav_container_icons div{
-        opacity: 0.2;
-        order:2;
+
+    .zeyada-title {
+        font-family: 'Zeyada', cursive;
+        font-size: 3.7rem;
     }
-    #nav_container_icons svg{
-        opacity : 0.2;
-        order:1;
-    } */
+
+    .zeyada-p {
+        font-family: 'Zeyada', cursive;
+        font-size: 2.7rem;
+    }
+}
+
+@media (min-width: 993px){
+    #header {
+        height: 100vh;
+    }
 }
