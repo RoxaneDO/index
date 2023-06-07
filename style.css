@@ -127,6 +127,10 @@ span{
     width: 30px;
     filter: invert(82%) sepia(2%) saturate(4566%) hue-rotate(289deg) brightness(107%) contrast(101%) drop-shadow(0 0.5rem 1rem var(--secondary-color));
 }
+
+.icon {
+    width: 2rem;
+}
 .icon-nav {
     width:25px;
     margin-left: 1rem;
@@ -168,11 +172,24 @@ span{
     padding: 2rem 0;
     width: 150px;
 }
-#nav a {
-    /* opacity : 0.2; */
+#nav a svg{
     transition:.6s cubic-bezier(.15,.5,.35,1);
 }
-#nav a:hover {
+
+#nav a div{
+    transition:.6s cubic-bezier(.15,.5,.35,1);
+}
+/* #nav a:hover {
+    opacity : 1;
+    transition:.6s cubic-bezier(.15,.5,.35,1);
+} */
+
+#nav a:hover div {
+    opacity : 1;
+    transition:.6s cubic-bezier(.15,.5,.35,1);
+}
+
+#nav a:hover svg {
     opacity : 1;
     transition:.6s cubic-bezier(.15,.5,.35,1);
 }

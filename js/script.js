@@ -57,9 +57,10 @@ $(document).ready(function() {
         var whoiAmPos = document.getElementById('whoiam').getBoundingClientRect();
         var skillsPos = document.getElementById('skills').getBoundingClientRect();
         var projectsPos = document.getElementById('projects').getBoundingClientRect();
-        var triangleNav = document.querySelectorAll('#nav_triangle a');
-        var squareNav = document.querySelectorAll('#nav_square a');
-        var circleNav = document.querySelectorAll('#nav_circle a');
+        var contactPos = document.getElementById('contact').getBoundingClientRect();
+        var triangleNav = document.querySelectorAll('#nav_triangle a svg');
+        var squareNav = document.querySelectorAll('#nav_square a svg');
+        var circleNav = document.querySelectorAll('#nav_circle a svg');
         var quartWin = $(window).height()/4;
 
 
@@ -85,7 +86,7 @@ $(document).ready(function() {
                 turnOnOff(squareNav[0], circleNav[0]);
 
             }
-            if(projectsPos.top <= quartWin ){
+            if(projectsPos.top <= quartWin && contactPos.top > quartWin){
                 turnOnOff(circleNav[0], squareNav[0]);
             }
         }
@@ -93,6 +94,7 @@ $(document).ready(function() {
         if (scrollBottom){
             nav.classList.remove("nav-container-mid")
             nav.classList.add("nav-container-bot")
+            turnOnOff(circleNav[0], circleNav[0]);
         }
     })
 });
