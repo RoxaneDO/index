@@ -41,7 +41,7 @@
                         </a>
                     </div>
                     <div id="nav_phone" class="w-100 mb-xl4">
-                        <a href="#contact" class="d-flex justify-content-end opa-100">
+                        <a href="#contact" class="d-flex justify-content-center justify-content-sm-end opa-100">
                             <img class="icon-nav glow opa-100" src="asset/image/telephone.svg" alt="">
                         </a>
                     </div>
@@ -65,14 +65,14 @@
         </div>
         <div id="header_titlename_container" class="g-0 col-12 col-xl-6 d-flex justify-content-xl-start justify-content-center align-items-center">
             <div id="header_titlename" class=" ps-5 ps-xl-3 flex-column pt-25 border-pink-left pe-4">
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column align-items-center align-items-sm-start">
                     <h1 class="h1c txt-fourth d-inline">ROXANE</h1>
                     <h1 class="txt-fourth d-inline">DONNAT</h1>
                 </div>
                 <div class="zeyada-neon sign mt-4 text-center">
                     OPEN TO WORK
                 </div>
-                <svg id="header_square" viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg" >
+                <svg id="header_square" viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg" class="d-none d-sm-block">
                     <rect x="-50" y="-50" width="815" height="775" fill="#123232" fill-opacity="0.4"/>
                 </svg>
                 <svg id="header_arrow" class="icon-neon-medium" viewBox="0 0 100 100">
@@ -81,8 +81,8 @@
             </div>
         </div>
     </header>
-    <section id="whoiam" class="row position-relative my-5">
-        <div id="whoiam_bg" class="" class="">
+    <section id="whoiam" class="row g-0 position-relative my-5">
+        <div id="whoiam_bg" class="">
             <img class="w-100 h-100" src="asset/image/polygon2.svg" alt="">
         </div>
         <div class="col-12 col-xl-7 d-flex justify-content-center align-items-center">
@@ -102,48 +102,59 @@
             </div>
         </div>
     </section>
-    <section id="skills" class="row">
+    <section id="skills" class="row g-0">
         <div id="skills_title" class="col-12 h-25">
             <h2 class="text-center my-5 py-5">Skills</h2>
         </div>
-        <div id="skills_container" class="row">
+        <div id="skills_container" class="row g-0">
             <div id="skills_square">
                 <img class=""src="asset/image/square.svg" alt="">
             </div>
-            <div class="col-0 col-sm-2 d-flex align-items-center pt-5 d-none d-sm-block">
-                <img src="asset/svg/icon_gear.svg" alt="">
-            </div>
-            <div class="col-12 col-sm-10 d-flex flex-column">
-                <h6 class="">back</h6>
-                <div class="d-flex flex-column">
-                    <span>Java (Spring), Tests Unitaires (jUnit)</span>
-                    <span>Base de données via MariaDb, MySQL</span>
-                    <span>Conception via StarUML</span>
+            <div class="col-12">
+                <div class="row g-0 justify-content-sm-center">
+                    <div class="col-1 col-sm-2 col-md-1 d-flex align-items-center pt-5">
+                        <img src="asset/svg/icon_gear.svg" alt="" class="d-none d-sm-block">
+                    </div>
+                    <div class="col-11 col-sm-8 col-md-6 col-lg-5 col-xxl-3 d-flex flex-column">
+                        <h6 class="">back</h6>
+                        <div class="d-flex flex-column">
+                            <span>Java (Spring), Tests Unitaires (jUnit)</span>
+                            <span>Base de données via MariaDb, MySQL</span>
+                            <span>Conception via StarUML</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-0 col-sm-2 d-flex align-items-center pt-5 d-none d-sm-block ">
-                <img src="asset/svg/icon_front.svg" alt="">
-            </div>
-            <div class="col-12 col-sm-10 d-flex flex-column pt-5">
-                <h6 class="">front</h6>
-                <div class="d-flex flex-column">
-                    <span>VueJS, Angular</span>
-                    <span>Vuetify, Bootstrap, Tailswind</span>
-                    <span>Conception via Figma</span>
+
+            <div class="col-12 mt-5">
+                <div class="row justify-content-sm-center">
+                    <div class="col-1 col-sm-2 col-md-1 d-flex align-items-center pt-5">
+                        <img src="asset/svg/icon_front.svg" alt="" class="d-none d-sm-block">
+                    </div>
+                    <div class="col-11 col-sm-8 col-md-6 col-lg-5 col-xxl-3 d-flex flex-column">
+                        <h6 class="">front</h6>
+                        <div class="d-flex flex-column">
+                            <span>VueJS, Angular</span>
+                            <span>Vuetify, Bootstrap, Tailswind</span>
+                            <span>Conception via Figma</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-0 col-sm-2 d-flex align-items-center pt-5  d-none d-sm-block">
-                <img src="asset/svg/icon_docker.svg" alt="">
-            </div>
-            <div class="col-12 col-sm-10 d-flex flex-column pt-5">
-                <h6 class="">devops</h6>
-                <div class="d-flex flex-column">
-                    <span>Conteneurisation via Docker, Rancher, Harbor</span>
+
+            <div class="col-12 mt-5">
+                <div class="row justify-content-sm-center">
+                    <div class="col-1 col-sm-2 col-md-1 d-flex align-items-center pt-5">
+                        <img src="asset/svg/icon_docker.svg" alt="" class="d-none d-sm-block">
+                    </div>
+                    <div class="col-11 col-sm-8 col-md-6 col-lg-5 col-xxl-3 d-flex flex-column">
+                        <h6 class="">devops</h6>
+                        <div class="d-flex flex-column">
+                            <span>Conteneurisation via Docker</span>
+                            <span>Déploiement Rancher, Harbor</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="skills_background" class="">
-            <div class="w-100 h-100">
             </div>
         </div>
     </section>
@@ -341,7 +352,7 @@
     </div>
 </section>
 <section id="contact" class="row">
-    <div class="col-6 d-flex justify-content-end align-items-end ">
+    <div class="col-12 d-flex justify-content-end align-items-end ">
         <h2 class="me-5">ALLO ?</h2>
     </div>
     <div class="col-6 d-flex flex-column justify-content-end ps-4 pb-3 border-pink-left">

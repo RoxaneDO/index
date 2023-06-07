@@ -19,6 +19,7 @@ main{
     font-family: 'Arial', sans-serif;
 }
 body {
+    overflow-x:hidden;
     background-color: var(--third-color);
 }
 h1 {
@@ -259,35 +260,14 @@ span{
     height: 500px;
     border-radius: inherit;
 }
-#whoiam_bg{
-    position: absolute;
-    margin-top: 800px;
-    left : 0%;
-    transform: translate(-50%, -50%);
-    height: 600px;
-    width: 600px;
-}
 
 #skills{
     height: auto;
     width: 100%;
     position: relative;
 }
-#skills_background{
-    position: absolute;
-    z-index: -7;
-    height: 100%;
-    width: 100%;
-    filter: brightness(1.8) blur(3.5px);
-    top:0;
-    left:0;
-}
 #skills_container{
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 650px;
     position: relative;
-    z-index: -2;
     margin: 0 auto;
 }
 #skills_container img{
@@ -615,6 +595,28 @@ span{
 
 
 /* RESPONSIVE */
+@media (max-width: 576px){
+ #whoiam_bg{
+    position: absolute;
+    left:34px !important;
+    top:85px !important;
+    height: 60px;
+    width: 110px;
+    transform: rotate(25deg);
+    overflow-x: hidden;
+ }
+}
+
+@media (min-width: 576px){
+    #whoiam_bg{
+        position: absolute;
+        margin-top: 800px;
+        left : 0%;
+        transform: translate(-50%, -50%);
+        height: 600px;
+        width: 600px;
+    }
+}
 
 @media (max-width: 1140px){
     .project-detail {

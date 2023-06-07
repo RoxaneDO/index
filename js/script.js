@@ -170,32 +170,41 @@ function parallaxe(element, vitesse, direction)
 
             var scroll = $(window).scrollTop();
 
-            switch( direction )
-            {
-                case 'top':
-                    var deplacement = posY - (scroll * vitesse);
-                    $(element).css('top', deplacement + 'px');
-                break;
+            var widthW = onresize();
 
-                case 'bottom':
-                    var deplacement = posY + (scroll * vitesse);
-                    $(element).css('top', deplacement + 'px');
-                break;
+            if(widthW > 560){
+                switch( direction )
+                {
+                    case 'top':
+                        var deplacement = posY - (scroll * vitesse);
+                        $(element).css('top', deplacement + 'px');
+                    break;
 
-                case 'left':
-                    var deplacement = posX - (scroll * vitesse);
-                    $(element).css('left', deplacement + 'px');
-                break;
+                    case 'bottom':
+                        var deplacement = posY + (scroll * vitesse);
+                        $(element).css('top', deplacement + 'px');
+                    break;
 
-                case 'right':
-                    var deplacement = posX + (scroll * vitesse);
-                    $(element).css('left', deplacement + 'px');
-                break;
+                    case 'left':
+                        var deplacement = posX - (scroll * vitesse);
+                        $(element).css('left', deplacement + 'px');
+                    break;
+
+                    case 'right':
+                        var deplacement = posX + (scroll * vitesse);
+                        $(element).css('left', deplacement + 'px');
+                    break;
+                }
             }
         });
     }
 
 }
+
+function onresize() {
+   return widthW = $(window).width();
+}
+
 parallaxe('#whoiam_bg', 0.4, 'top');
 parallaxe('#whoiam_bg', 0.2, 'right');
 parallaxe('#header_square', 0.8, 'top');
@@ -208,15 +217,17 @@ function paralaxeScale(element, vitesse){
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         var varWidth = width + (scroll * vitesse);
-        console.log("widnow wid", $(window).width())
-        console.log("varWidth", varWidth)
+        var widthW = $(window).width();
+
         $(element).css('height', varWidth + 'px');
         $(element).css('width', varWidth + 'px');
 
-        if(varWidth <= $(window).width()){
-            $(element).css('width',  $(window).width() + 'px');
 
-        }
+
+
+        // if(varWidth <= widthWin){
+        //     $(element).css('width',  widthWin + 'px');
+        // }
     })
 }
 paralaxeScale('#skills_square', 0.4)
