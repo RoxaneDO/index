@@ -223,11 +223,9 @@ function paralaxeScale(element, vitesse){
         $(element).css('width', varWidth + 'px');
 
 
-
-
-        // if(varWidth <= widthWin){
-        //     $(element).css('width',  widthWin + 'px');
-        // }
+        if(varWidth >= widthWin){
+             $(element).css('width, 100%');
+        }
     })
 }
 paralaxeScale('#skills_square', 0.4)
