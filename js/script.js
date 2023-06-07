@@ -50,7 +50,6 @@ for(let i = 0; i < parent.length; i++) {
 // NAVBAR
 $(document).ready(function() {
     const nav = document.querySelector('#nav_container');
-
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         var scrollBottom = $(window).scrollTop() + $(window).height() > $(document).height() - 20;
@@ -63,41 +62,50 @@ $(document).ready(function() {
         var circleNav = document.querySelectorAll('#nav_circle a svg');
         var quartWin = $(window).height()/4;
 
+        // RESPONSIVE VERTICAL
+        if($(window).height() > 1600){
+            if (scroll > 0 && !scrollBottom ){
+                nav.classList.remove("nav-container-mid")
+                nav.classList.add("nav-container-top")
+            }
 
-        if (scroll > 0){
-            nav.classList.remove("nav-container-mid")
-            nav.classList.add("nav-container-top")
+            if(scroll > 20){
+                nav.classList.remove("nav-container-bot")
+                nav.classList.remove("nav-container-top")
+                nav.classList.add("nav-container-mid")
+            }
+
+            if(scrollBottom){
+                nav.classList.remove("nav-container-mid")
+                nav.classList.add("nav-container-bot")
+            }
         }
-        if (scroll > 20 && !scrollBottom){
-            nav.classList.remove("nav-container-bot")
-            nav.classList.remove("nav-container-top")
-            nav.classList.add("nav-container-mid")
 
-            if(whoiAmPos.top > 0 ){
-                turnOnOff(triangleNav[0], triangleNav[0])
-            }
+        //OPACITY
+        if(whoiAmPos.top > 0 ){
+            turnOnOff(triangleNav[0], triangleNav[0])
+        }
 
-            if(whoiAmPos.top <= quartWin && skillsPos.top > quartWin){
-                turnOnOff(triangleNav[0], squareNav[0])
-            }
+        if(whoiAmPos.top <= quartWin && skillsPos.top > quartWin){
+            turnOnOff(triangleNav[0], squareNav[0])
+        }
 
-            if(skillsPos.top <= quartWin && projectsPos.top > quartWin){
-                turnOnOff(squareNav[0], triangleNav[0]);
-                turnOnOff(squareNav[0], circleNav[0]);
+        if(skillsPos.top <= quartWin && projectsPos.top > quartWin){
+            turnOnOff(squareNav[0], triangleNav[0]);
+            turnOnOff(squareNav[0], circleNav[0]);
+        }
 
-            }
-            if(projectsPos.top <= quartWin && contactPos.top > quartWin){
-                turnOnOff(circleNav[0], squareNav[0]);
-            }
+        if(projectsPos.top <= quartWin && contactPos.top > quartWin){
+            turnOnOff(circleNav[0], squareNav[0]);
         }
 
         if (scrollBottom){
-            nav.classList.remove("nav-container-mid")
-            nav.classList.add("nav-container-bot")
             turnOnOff(circleNav[0], circleNav[0]);
         }
     })
 });
+
+
 function turnOnOff(turnOn, turnOff) {
     turnOn.classList.add('opa-100');
     turnOff.classList.remove('opa-100');
@@ -200,8 +208,15 @@ function paralaxeScale(element, vitesse){
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         var varWidth = width + (scroll * vitesse);
-        $(element).css('width', varWidth + 'px');
+        console.log("widnow wid", $(window).width())
+        console.log("varWidth", varWidth)
         $(element).css('height', varWidth + 'px');
+        $(element).css('width', varWidth + 'px');
+
+        if(varWidth <= $(window).width()){
+            $(element).css('width',  $(window).width() + 'px');
+
+        }
     })
 }
 paralaxeScale('#skills_square', 0.4)

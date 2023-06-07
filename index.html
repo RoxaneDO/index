@@ -13,45 +13,44 @@
 </head>
 <body>
     <nav id="nav" class="position-fixed">
-        <div class="position-relative h-100 w-100">
-            <div id="nav_container" class="nav-container-top h-100 w-100">
-                <div id="nav_container_icons" class="">
-                    <div id="nav_triangle" class="my-4 w-100">
-                        <a href="#whoiam" class="d-flex justify-content-end">
-                            <div class="opa-0">Roxane</div>
+        <div class="position-relative h-100 w-100 d-flex justify-content-start justify-content-md-center">
+            <div id="nav_container" class="h-100">
+                <div id="nav_container_icons" class="d-flex">
+                    <div id="nav_triangle" class="w-100 mb-xl-4">
+                        <a href="#whoiam" class="d-flex justify-content-start">
                             <svg class="icon-nav opa-20" viewBox="0 0 25 25" width="25" height="25" fill="#FFEBF7">
                                 <polygon width="100%" height="100%" points="12 3, 25 25, 0 25"/>
                             </svg>
+                            <div class="opa-0 ms-2">Roxane</div>
                         </a>
                     </div>
-                    <div id="nav_square" class="my-4 w-100">
-                        <a href="#skills" class="d-flex justify-content-end">
-                            <div class="opa-0">Skills</div>
+                    <div id="nav_square" class="w-100 mb-xl-4">
+                        <a href="#skills" class="d-flex justify-content-start">
                             <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="icon-nav opa-20" >
                                 <rect x="0" y="0" width="100%" height="100%" fill="#284B4C" fill-opacity="1"/>
                             </svg>
+                            <div class="opa-0 ms-2">Skills</div>
                         </a>
                     </div>
-                    <div id="nav_circle" class="my-4 w-100">
-                        <a href="#projects" class="d-flex justify-content-end">
-                            <div class="opa-0">Projects</div>
+                    <div id="nav_circle" class="w-100 mb-xl-4">
+                        <a href="#projects" class="d-flex justify-content-start">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon-nav opa-20" fill="#E2A812" viewBox="0 0 25 25">
-                              <circle cx="50%" cy="50%" r="12"  />
+                                <circle cx="50%" cy="50%" r="12"  />
                             </svg>
+                            <div class="opa-0 ms-2">Projects</div>
                         </a>
                     </div>
-                    <div id="nav_phone" class="my-4 w-100">
+                    <div id="nav_phone" class="w-100 mb-xl4">
                         <a href="#contact" class="d-flex justify-content-end opa-100">
                             <img class="icon-nav glow opa-100" src="asset/image/telephone.svg" alt="">
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </nav>
     <header id="header" class="row">
-        <div id="header_titledev_container" class="col-6 d-flex justify-content-end align-items-start">
+        <div id="header_titledev_container" class="d-none d-xl-block col-0 col-xl-6 d-flex justify-content-end align-items-start">
             <div id="header_titledev" class="d-flex pe-4 flex-column pt-25">
                 <h1 class="h1c txt-fourth d-inline">
                     CONCEPTEUR
@@ -64,20 +63,20 @@
                 </svg>
             </div>
         </div>
-        <div id="header_titlename_container" class="g-0 col-6 d-flex justify-content-start align-items-center">
-            <div id="header_titlename" class=" ps-3 flex-column pt-25 border-pink-left pe-4">
+        <div id="header_titlename_container" class="g-0 col-12 col-xl-6 d-flex justify-content-xl-start justify-content-center align-items-center">
+            <div id="header_titlename" class=" ps-5 ps-xl-3 flex-column pt-25 border-pink-left pe-4">
                 <div class="d-flex flex-column">
                     <h1 class="h1c txt-fourth d-inline">ROXANE</h1>
                     <h1 class="txt-fourth d-inline">DONNAT</h1>
                 </div>
-                <div class="zeyada-neon sign mt-4">
+                <div class="zeyada-neon sign mt-4 text-center">
                     OPEN TO WORK
                 </div>
                 <svg id="header_square" viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg" >
                     <rect x="-50" y="-50" width="815" height="775" fill="#123232" fill-opacity="0.4"/>
                 </svg>
                 <svg id="header_arrow" class="icon-neon-medium" viewBox="0 0 100 100">
-            	    <polygon points="50 15, 100 100, 0 100"/>
+                    <polygon points="50 15, 100 100, 0 100"/>
                 </svg>
             </div>
         </div>
@@ -86,11 +85,10 @@
         <div id="whoiam_bg" class="" class="">
             <img class="w-100 h-100" src="asset/image/polygon2.svg" alt="">
         </div>
-        <div class="col-7 d-flex justify-content-center align-items-center ">
-            <div id="whoiam_description" class="d-flex flex-column justify-content-around align-items-end ">
+        <div class="col-12 col-xl-7 d-flex justify-content-center align-items-center">
+            <div id="whoiam_description" class="d-flex flex-column justify-content-around align-items-center align-items-xl-end text-center text-xl-end">
                 <p class="zeyada-title">Bonjour ! Hello ! Ohayō !</p>
-                <div class="">
-
+                <div class="d-flex flex-column align-items-center align-items-xl-end">
                     <p class="txt-fourth zeyada-p">Juste en dessous, tu trouveras la liste des compétences et langages que j'ai acquéri dans la <b class="glow"> conception et le développement d'applications web</b>. </p>
                     <p class="txt-fourth zeyada-p">Un peu plus bas, j'ai listé la majorité des projets que j'ai réalisé sur ces <b class="glow">2 dernières années </b>lors de mes expériences en entreprise ou en formation.</p>
                     <p class="txt-fourth zeyada-p"><b class="glow">Merci </b>beaucoup de ta visite et du temps que tu accordes à mon travail. </p>
@@ -99,7 +97,7 @@
             </div>
         </div>
         <div class="col-5 d-flex justify-content-start align-items-center">
-            <div  class="d-flex justify-content-center align-items-center rounded">
+            <div class="d-flex justify-content-center align-items-center rounded d-none d-xl-block">
                 <img id="whoiam_picture" src="asset/image/roxaneDo.jpg" alt="">
             </div>
         </div>
@@ -112,10 +110,10 @@
             <div id="skills_square">
                 <img class=""src="asset/image/square.svg" alt="">
             </div>
-            <div class="col-2 d-flex align-items-center pt-5">
+            <div class="col-0 col-sm-2 d-flex align-items-center pt-5 d-none d-sm-block">
                 <img src="asset/svg/icon_gear.svg" alt="">
             </div>
-            <div class="col-10 d-flex flex-column">
+            <div class="col-12 col-sm-10 d-flex flex-column">
                 <h6 class="">back</h6>
                 <div class="d-flex flex-column">
                     <span>Java (Spring), Tests Unitaires (jUnit)</span>
@@ -123,10 +121,10 @@
                     <span>Conception via StarUML</span>
                 </div>
             </div>
-            <div class="col-2 d-flex align-items-center pt-5">
+            <div class="col-0 col-sm-2 d-flex align-items-center pt-5 d-none d-sm-block ">
                 <img src="asset/svg/icon_front.svg" alt="">
             </div>
-            <div class="col-10 d-flex flex-column pt-5">
+            <div class="col-12 col-sm-10 d-flex flex-column pt-5">
                 <h6 class="">front</h6>
                 <div class="d-flex flex-column">
                     <span>VueJS, Angular</span>
@@ -134,10 +132,10 @@
                     <span>Conception via Figma</span>
                 </div>
             </div>
-            <div class="col-2 d-flex align-items-center pt-5">
+            <div class="col-0 col-sm-2 d-flex align-items-center pt-5  d-none d-sm-block">
                 <img src="asset/svg/icon_docker.svg" alt="">
             </div>
-            <div class="col-10 d-flex flex-column pt-5">
+            <div class="col-12 col-sm-10 d-flex flex-column pt-5">
                 <h6 class="">devops</h6>
                 <div class="d-flex flex-column">
                     <span>Conteneurisation via Docker, Rancher, Harbor</span>
@@ -166,196 +164,198 @@
     <section id="projects" class="d-flex justify-content-center align-items-center">
         <!-- Modals -->
         <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <span>présence-agence</span>
-              </div>
-              <div class="modal-body">
-                <!-- CAROUSEL -->
-                <div id="carouselProject1" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span>présence-agence</span>
                     </div>
-                    <div class="carousel-inner">
-                        <!-- <div class="carousel-item m-auto active">
-                            <img class="w-100" src="asset/image/roxaneDo.jpg" alt="">
-                        </div> -->
-                        <div class="carousel-item active">
-                            <img class="w-100" src="asset/image/image1.png" alt="">
+                    <div class="modal-body">
+                        <!-- CAROUSEL -->
+                        <div id="carouselProject1" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <!-- <div class="carousel-item m-auto active">
+                                <img class="w-100" src="asset/image/roxaneDo.jpg" alt="">
+                            </div> -->
+                            <div class="carousel-item active">
+                                <img class="w-100" src="asset/image/image1.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="w-100" src="asset/image/SansTitre.png" alt="">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img class="w-100" src="asset/image/SansTitre.png" alt="">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row container m-auto ">
-            <div id="projects_title" class="col-12 h-25">
-                <h2 class="my-5 py-5">PROJETS</h2>
-                <!-- presence agence, sistemic, picom, lanimealerie, form scratch, tipi -->
-            </div>
-            <div id="projects_container" class="row d-flex flex-column">
-                <!-- UN PROJET -->
-                <div class="project d-flex ">
-                    <svg  class="col-1 mb-5 d-flex align-items-center" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
-                        <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
-                    </svg>
-                    <div class="project-title col-4 pb-5 position-relative">
-                        <p>2022-2023 | APSIDE</p>
-                        <h6>présence-agence</h6>
-                        <span>Espace de réservation en ligne</span>
-                    </div>
-                    <div class="project-detail col-7 opa-0 d-flex align-items-center">
-                        <ul class="col-10">
-                            <li>Conceptions UML et création de maquettes.</li>
-                            <li>Développement front (<b class="glow">VueJs</b>) et back (<b class="glow">Spring 13, 17</b>).</li>
-                            <li>Modifications de l’architecture des données.</li>
-                            <li>Tests (<b class="glow">jUnit</b>) et déploiement (<b class="glow">Docker, Rancher, Harbor</b>).</li>
-                            <li>Maintenance de l’application.</li>
-                            <li>Refactorisation et optimisation de code.</li>
-                        </ul>
-                        <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center" src="asset/image/vue.svg" alt="" class="col-2">
-                    </div>
-                </div>
-
-                <!-- UN PROJET -->
-                <div class="project d-flex ">
-                    <svg  class="col-1 mb-5 d-flex align-items-center" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
-                        <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
-                    </svg>
-                    <div id="project1" class="project-title col-4 pb-5 position-relative">
-                        <p>2022-2023</p>
-                        <h6>sistemic</h6>
-                        <span>Enterprise Resource Planning </span>
-                    </div>
-                    <div class="project-detail col-7 opa-0 d-flex">
-                        <ul class="col-10">
-                            <li>Développement des nouvelles fonctionnalités (Nuxt2, AWS)</li>
-                            <li>Maintenance et SAV de l’application.</li>
-                            <li>Maquettage et stratégie commericale.</li>
-                            <li>Brassage de baie chez le client.</li>
-                            <li>Configuration Raspberry Pi.</li>
-                            <li>Montage hardware.</li>
-                        </ul>
-                        <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center" src="asset/image/vue.svg" alt="" class="col-2">
-                    </div>
-                </div>
-
-                <!-- UN PROJET -->
-                <div class="project d-flex ">
-                    <svg  class="col-1 mb-5 d-flex align-items-center" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
-                        <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
-                    </svg>
-                    <div id="project1" class="project-title col-4 pb-5 position-relative">
-                        <p>2022-2023</p>
-                        <h6>picom</h6>
-                        <span>Concept project</span>
-                    </div>
-                    <div class="project-detail col-7 opa-0 d-flex align-items-center">
-                        <ul class="col-10">
-                            <li>Créations des maquettes</li>
-                            <li>Conception UML</li>
-                            <li>Base MySql</li>
-                        </ul>
-                        <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center" src="asset/image/vue.svg" alt="" class="col-2">
-                    </div>
-                </div>
-
-                <!-- UN PROJET -->
-                <div class="project d-flex ">
-                    <svg  class="col-1 mb-5 d-flex align-items-center" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
-                        <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
-                    </svg>
-                    <div id="project1" class="project-title col-4 pb-5 position-relative">
-                        <p>2022-2023</p>
-                        <h6>lanimealerie</h6>
-                        <span>Concept project</span>
-                    </div>
-                    <div class="project-detail col-7 opa-0 d-flex">
-                        <ul class="col-10">
-                            <li>Création des maquettes</li>
-                            <li>Conception UML</li>
-                            <li>Développement front (Angular/Symfony) et back (Synfony).</li>
-                            <li>Base de données MySQL.</li>
-                        </ul>
-                        <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center" src="asset/image/vue.svg" alt="" class="col-2">
-                    </div>
-                </div>
-
-                <!-- UN PROJET -->
-                <div class="project d-flex ">
-                    <svg  class="col-1 mb-5 d-flex align-items-center" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
-                        <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
-                    </svg>
-                    <div id="project1" class="project-title col-4 pb-5 position-relative">
-                        <p>2022-2023</p>
-                        <h6>tipi</h6>
-                    </div>
-                    <div class="project-detail col-7 opa-0 d-flex align-items-center">
-                        <ul class="col-10">
-                            <li>Création des maquettes</li>
-                            <li>Conception UML</li>
-                            <li>Développement front (Angular/Symfony) et back (Synfony).</li>
-                            <li>Base de données MySQL.</li>
-                        </ul>
-                        <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center" src="asset/image/vue.svg" alt="" class="col-2">
-                    </div>
-                </div>
-
-                <!-- UN PROJET -->
-                <div class="project d-flex ">
-                    <svg  class="col-1 mb-5 d-flex align-items-center" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
-                        <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
-                    </svg>
-                    <div id="project1" class="project-title col-4 pb-5 position-relative">
-                        <p>2022-2023</p>
-                        <h6>from scratch</h6>
-                    </div>
-                    <div class="project-detail col-7 opa-0 d-flex">
-                        <ul class="col-10">
-                            <li>Création des maquettes</li>
-                            <li>Conception UML</li>
-                            <li>Développement front (Angular/Symfony) et back (Synfony).</li>
-                            <li>Base de données MySQL.</li>
-                        </ul>
-                        <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center" src="asset/image/vue.svg" alt="" class="col-2">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="contact" class="row">
-        <div class="col-6 d-flex justify-content-end align-items-end ">
-            <h2 class="me-5">ALLO ?</h2>
+    </div>
+
+
+    <div class="row container-fluid container-lg m-auto ">
+        <div id="projects_title" class="col-12 h-25">
+            <h2 class="my-5 py-5">PROJETS</h2>
         </div>
-        <div class="col-6 d-flex flex-column justify-content-end ps-4 pb-3 border-pink-left">
-            <div class="d-flex">
-                <a href="https://www.linkedin.com/in/roxane-donnat-b72142164/" target="_blank" class="d-flex align-items-center"><img src="asset/image/linkedin.svg" alt="" class="icon me-2"></a>
-                <span class="d-flex align-items-center mx-2" >|</span>
-                <a href="https://github.com/RoxaneDO?tab=repositories" target="_blank" class="d-flex align-items-center"><img src="asset/image/github.svg" alt="" class="icon me-2"></a>
-                <span class="my-2">RoxaneDO</span>
+        <div id="projects_container" class="row d-flex flex-column ">
+            <!-- UN PROJET -->
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+                <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
+                    <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
+                </svg>
+                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                    <p>2022-2023 | APSIDE</p>
+                    <h6>présence-agence</h6>
+                    <span>Espace de réservation en ligne</span>
+                </div>
+                <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
+                    <ul class="col-10 p-0 ">
+                        <li>Conceptions UML et création de maquettes.</li>
+                        <li>Développement front (<b class="glow">VueJs</b>) et back (<b class="glow">Spring 13, 17</b>).</li>
+                        <li>Modifications de l’architecture des données.</li>
+                        <li>Tests (<b class="glow">jUnit</b>) et déploiement (<b class="glow">Docker, Rancher, Harbor</b>).</li>
+                        <li>Maintenance de l’application.</li>
+                        <li>Refactorisation et optimisation de code.</li>
+                    </ul>
+                    <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center d-none d-xl-block" src="asset/image/vue.svg" alt="" class="col-2">
+                </div>
             </div>
-            <span class="my-2">roxane.donnat@gmail.com</span>
-            <span class="my-2">07.83.32.27.03</span>
-            <span class="my-2">Clermont-Ferrand, France</span>
+
+
+            <!-- UN PROJET -->
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+                <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
+                    <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
+                </svg>
+                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                    <p>2022-2023 | LE&CO</p>
+                    <h6>sistemic</h6>
+                    <span>Enterprise Resource Planning </span>
+                </div>
+                <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
+                    <ul class="col-10 p-0 ">
+                        <li >Développement des nouvelles fonctionnalités (Nuxt2, AWS)</li>
+                        <li>Maintenance et SAV de l’application.</li>
+                        <li>Maquettage et stratégie commericale.</li>
+                        <li>Brassage de baie chez le client.</li>
+                        <li>Configuration Raspberry Pi.</li>
+                        <li>Montage hardware.</li>
+                    </ul>
+                    <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center d-none d-xl-block" src="asset/image/vue.svg" alt="" class="col-2">
+                </div>
+            </div>
+
+            <!-- UN PROJET -->
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+                <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
+                    <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
+                </svg>
+                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                    <p>2022-2023</p>
+                    <h6>picom</h6>
+                    <span>Concept project</span>
+                </div>
+                <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
+                    <ul class="col-10 p-0 ">
+                        <li>Créations des maquettes</li>
+                        <li>Conception UML</li>
+                        <li>Base MySql</li>
+                    </ul>
+                    <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center d-none d-xl-block" src="asset/image/vue.svg" alt="" class="col-2">
+                </div>
+            </div>
+
+            <!-- UN PROJET -->
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+                <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
+                    <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
+                </svg>
+                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                    <p>2022-2023</p>
+                    <h6>lanimealerie</h6>
+                    <span>Concept project</span>
+                </div>
+                <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
+                    <ul class="col-10 p-0 ">
+                        <li>Création des maquettes</li>
+                        <li>Conception UML</li>
+                        <li>Développement front (Angular/Symfony) et back (Synfony).</li>
+                        <li>Base de données MySQL.</li>
+                    </ul>
+                    <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center d-none d-xl-block" src="asset/image/vue.svg" alt="" class="col-2">
+                </div>
+            </div>
+
+
+            <!-- UN PROJET -->
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+                <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
+                    <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
+                </svg>
+                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                    <p>2022-2023</p>
+                    <h6>tipi</h6>
+                </div>
+                <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
+                    <ul class="col-10 p-0 ">
+                        <li>Création des maquettes</li>
+                        <li>Conception UML</li>
+                        <li>Développement front (Angular/Symfony) et back (Synfony).</li>
+                        <li>Base de données MySQL.</li>
+                    </ul>
+                    <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center d-none d-xl-block" src="asset/image/vue.svg" alt="" class="col-2">
+                </div>
+            </div>
+
+            <!-- UN PROJET -->
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+                <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
+                    <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
+                </svg>
+                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                    <p>2022-2023</p>
+                    <h6>from scratch</h6>
+                </div>
+                <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
+                    <ul class="col-10 p-0 ">
+                        <li>Création des maquettes</li>
+                        <li>Conception UML</li>
+                        <li>Développement front (Angular/Symfony) et back (Synfony).</li>
+                        <li>Base de données MySQL.</li>
+                    </ul>
+                    <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center d-none d-xl-block" src="asset/image/vue.svg" alt="" class="col-2">
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+<section id="contact" class="row">
+    <div class="col-6 d-flex justify-content-end align-items-end ">
+        <h2 class="me-5">ALLO ?</h2>
+    </div>
+    <div class="col-6 d-flex flex-column justify-content-end ps-4 pb-3 border-pink-left">
+        <div class="d-flex">
+            <a href="https://www.linkedin.com/in/roxane-donnat-b72142164/" target="_blank" class="d-flex align-items-center"><img src="asset/image/linkedin.svg" alt="" class="icon me-2"></a>
+            <span class="d-flex align-items-center mx-2" >|</span>
+            <a href="https://github.com/RoxaneDO?tab=repositories" target="_blank" class="d-flex align-items-center"><img src="asset/image/github.svg" alt="" class="icon me-2"></a>
+            <span class="my-2">RoxaneDO</span>
+        </div>
+        <span class="my-2">roxane.donnat@gmail.com</span>
+        <span class="my-2">07.83.32.27.03</span>
+        <span class="my-2">Clermont-Ferrand, France</span>
+    </div>
+</section>
 </body>
 
 </html>

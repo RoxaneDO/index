@@ -162,27 +162,27 @@ span{
     transition:.5s ease-out !important;
 }
 
-
-
 #nav {
     z-index: 1000;
-    height: 100vh;
-    right: 6rem;
+    height: 5rem;
+    left: 0rem;
     top: 0rem;
     padding: 2rem 0;
-    width: 150px;
-}
-#nav a svg{
-    transition:.6s cubic-bezier(.15,.5,.35,1);
+    width: 100%;
+    backdrop-filter: blur(10px)
 }
 
+#nav_container {
+    width : 10rem;
+}
+
+#nav a {
+    width:7rem;
+    transition:.6s cubic-bezier(.15,.5,.35,1);
+}
 #nav a div{
     transition:.6s cubic-bezier(.15,.5,.35,1);
 }
-/* #nav a:hover {
-    opacity : 1;
-    transition:.6s cubic-bezier(.15,.5,.35,1);
-} */
 
 #nav a:hover div {
     opacity : 1;
@@ -201,7 +201,6 @@ span{
 }
 #header_container_openToWork {
     animation: shine_bg 5s forwards, flicker 3s infinite;
-    /* background-image: radial-gradient( ellipse 31% 49% at 50% 47%, #6b183987, #0000 ); */
     filter: brightness(1.3) blur(0.5px);
 }
 #header_openToWork {
@@ -254,7 +253,6 @@ span{
 #whoiam_description{
     width: 730px;
     height: 600px;
-    text-align: right;
 }
 #whoiam_picture{
     width: 320px;
@@ -613,4 +611,57 @@ span{
   to {
     opacity: 1;
   }
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1140px){
+    .project-detail {
+        opacity: 1
+    }
+    ul {
+        list-style:initial;
+    }
+    li {
+        padding-left: 2rem;
+    }
+    li::marker {
+        color: var(--fifth-color);
+    }
+    /* #nav {
+        z-index: 1000;
+        height: 40px;
+        right: 0;
+        top: 0rem;
+        padding: 2rem 0;
+        width: 100%;
+    }
+    #nav_container_icons div{
+        opacity: 1;
+        order:2;
+    }
+    #nav_container_icons svg{
+        opacity : 1;
+        order:1;
+    }< */
+}
+
+@media (max-width: 1600px){
+    /* #nav {
+        z-index: 1000;
+        height: 40px;
+        right: 0;
+        top: 0rem;
+        padding: 2rem 0;
+        width: 100%;
+    }
+    #nav_container_icons div{
+        opacity: 0.2;
+        order:2;
+    }
+    #nav_container_icons svg{
+        opacity : 0.2;
+        order:1;
+    } */
 }
