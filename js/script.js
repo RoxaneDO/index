@@ -219,12 +219,13 @@ function paralaxeScale(element, vitesse){
         var varWidth = width + (scroll * vitesse);
         var widthW = $(window).width();
 
-        $(element).css('height', varWidth + 'px');
-        $(element).css('width', varWidth + 'px');
-
-
         if(varWidth >= widthWin){
-             $(element).css('width, 100%');
+            $(element).css('height', varWidth + 'px');
+            $(element).css('width, 100%');
+        }
+        else{
+            $(element).css('height', varWidth + 'px');
+            $(element).css('width', varWidth + 'px');
         }
     })
 }
