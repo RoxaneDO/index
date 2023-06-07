@@ -251,6 +251,9 @@ span{
     width: 100%;
     padding-top: 50px;
 }
+#whoiam_cv{
+    color: var(--fifth-color);
+}
 #whoiam_description{
     width: 730px;
     height: 600px;
@@ -295,10 +298,8 @@ span{
 
 #projects{
     width: 100%;
-    margin : 150px auto;
 }
 #projects_title{
-    margin-bottom: 80px;
 }
 #projects_container{
     position:relative;
