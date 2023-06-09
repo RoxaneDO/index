@@ -132,7 +132,6 @@ span{
 }
 .icon-nav {
     width:25px;
-    margin-left: 1rem;
 }
 .project {
     position: relative;
@@ -171,11 +170,11 @@ span{
 }
 
 #nav_container {
-    width : 10rem;
+    /* width : 10rem; */
 }
 
 #nav a {
-    width:7rem;
+    /* width:7rem; */
     transition:.6s cubic-bezier(.15,.5,.35,1);
 }
 #nav a div{
@@ -635,7 +634,7 @@ span{
         height: 100%;
     }
 
-    .zeyada-title {
+    /* .zeyada-title {
         font-family: 'Zeyada', cursive;
         font-size: 3.7rem;
     }
@@ -643,7 +642,7 @@ span{
     .zeyada-p {
         font-family: 'Zeyada', cursive;
         font-size: 2.7rem;
-    }
+    } */
 }
 
 @media (min-width: 993px){
