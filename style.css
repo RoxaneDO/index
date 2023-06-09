@@ -166,7 +166,9 @@ span{
     top: 0rem;
     padding: 2rem 0;
     width: 100%;
-    backdrop-filter: blur(10px)
+    backdrop-filter: blur(10px);
+    /* backdrop mobile */
+    -webkit-backdrop-filter: blur(10px);
 }
 
 #nav_container {
