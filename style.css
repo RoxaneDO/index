@@ -144,10 +144,10 @@ span{
     justify-content: center;
 }
 .carousel-indicators [data-bs-target]{
-    background-color : #ff9f24;
+    background-color : #705308;
 }
 .modal-content {
-    background-color: #ffffff17;
+    background-color: #705308;
 }
 .modal-dialog {
     max-width: 1050px;
@@ -234,9 +234,8 @@ span{
 }
 
 #keywords{
-    height: 350px;
     width: 100%;
-    margin: 150px 0;
+    margin: 9.375rem 0;
     overflow-x: hidden;
 
 }
@@ -244,7 +243,6 @@ span{
 #whoiam{
     height: 100vh;
     width: 100%;
-    padding-top: 50px;
 }
 #whoiam_cv{
     color: var(--fifth-color);
@@ -303,7 +301,6 @@ span{
 #contact{
     width: 100%;
     height: 300px;
-    margin-top : 24rem;
 }
 
 .glow{
@@ -591,13 +588,15 @@ span{
 
 
 /* RESPONSIVE */
+
+/* W < 576 */
 @media (max-width: 576px){
  #whoiam_bg{
     position: absolute;
-    left:34px !important;
-    top:85px !important;
-    height: 60px;
-    width: 110px;
+    left:0px !important;
+    top:0px !important;
+    height: 110px;
+    width: 160px;
     transform: rotate(25deg);
     overflow-x: hidden;
  }
@@ -606,20 +605,26 @@ span{
      content:none;
  }
 
+ .zeyada-p {
+     font-family: 'Zeyada', cursive;
+     font-size: 1.3rem;
+ }
 }
+/* W < 992 */
+@media (max-width: 992px){
 
-@media (min-width: 576px){
-    #whoiam_bg{
-        position: absolute;
-        margin-top: 800px;
-        left : 0%;
-        transform: translate(-50%, -50%);
-        height: 600px;
-        width: 600px;
+    #header {
+        height: 100%;
+    }
+    #whoiam {
+        height: 100%;
+        margin-top: 15rem;
+    }
+    span{
+        font-size: 1.2rem;
     }
 }
-
-
+/* W < 1140 */
 @media (max-width: 1140px){
     .project-detail {
         opacity: 1
@@ -628,7 +633,7 @@ span{
         list-style:initial;
     }
     li {
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
     li::marker {
         color: var(--fifth-color);
@@ -636,24 +641,37 @@ span{
 
 }
 
-@media (max-width: 992px){
-    #header {
-        height: 100%;
+/* 576 < W < 992 */
+@media (min-width: 576px) and (max-width: 992px){
+    #whoiam_bg{
+       position: absolute;
+       left:0px !important;
+       top:90px !important;
+       height: 110px;
+       width: 160px;
+       transform: rotate(25deg);
+       overflow-x: hidden;
     }
-
-    /* .zeyada-title {
-        font-family: 'Zeyada', cursive;
-        font-size: 3.7rem;
-    }
-
-    .zeyada-p {
-        font-family: 'Zeyada', cursive;
-        font-size: 2.7rem;
-    } */
 }
 
+/* 577 < W  */
+@media (min-width: 577px){
+    #whoiam {
+        height: 100vh;
+    }
+}
+/* 993 < W */
 @media (min-width: 993px){
+    #whoiam_bg{
+        position: absolute;
+        bottom: 0;
+        left : 0;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 200px;
+    }
     #header {
         height: 100vh;
     }
+
 }

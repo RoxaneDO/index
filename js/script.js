@@ -171,7 +171,7 @@ function parallaxe(element, vitesse, direction)
             var scroll = $(window).scrollTop();
             var widthW = $(window).width();
 
-            if(widthW > 980){
+            if(widthW > 993){
                 switch( direction )
                 {
                     case 'top':
@@ -216,8 +216,9 @@ function paralaxeScale(element, vitesse){
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         var varWidth = width + (scroll * vitesse);
-        var widthW = $(window).width();
+        var widthW = onresize();
 
+        console.log("widthW", widthW)
         if(varWidth >= widthW){
             $(element).css('height', varWidth + 'px');
             $(element).css('width, 100%');

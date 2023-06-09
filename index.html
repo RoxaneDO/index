@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zeyada&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="nav" class="position-fixed w-100 ">
+    <nav id="nav" class="position-fixed w-100">
         <div class="position-relative h-100 w-100 d-flex justify-content-center">
             <div id="nav_container" class="h-100">
                 <div id="nav_container_icons" class="d-flex w-100">
@@ -52,7 +52,7 @@
             </div>
         </div>
     </nav>
-    <header id="header" class="row">
+    <header id="header" class="row g-0">
         <div id="header_titledev_container" class="d-none d-xl-block col-0 col-xl-6 d-flex justify-content-end align-items-start">
             <div id="header_titledev" class="d-flex pe-4 flex-column pt-25">
                 <h1 class="h1c txt-fourth d-inline">
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div id="header_titlename_container" class="g-0 col-12 col-xl-6 d-flex justify-content-xl-start justify-content-center align-items-center">
-            <div id="header_titlename" class=" ps-5 ps-xl-3 flex-column pt-25 border-pink-left pe-5">
+            <div id="header_titlename" class="ps-xl-3 flex-column pt-25 border-pink-left">
                 <div class="d-flex flex-column align-items-center align-items-sm-start">
                     <h1 class="h1c txt-fourth d-inline">ROXANE</h1>
                     <h1 class="txt-fourth d-inline">DONNAT</h1>
@@ -84,7 +84,7 @@
             </div>
         </div>
     </header>
-    <section id="whoiam" class="row g-0 position-relative my-5">
+    <section id="whoiam" class="row g-0 position-relative ">
         <div id="whoiam_bg" class="">
             <img class="w-100 h-100" src="asset/image/polygon2.svg" alt="">
         </div>
@@ -133,7 +133,7 @@
             </div>
 
             <div class="col-12 mt-5">
-                <div class="row justify-content-sm-center">
+                <div class="row justify-content-sm-center g-0">
                     <div class="col-1 col-sm-2 col-md-1 d-flex align-items-center pt-5">
                         <img src="asset/svg/icon_front.svg" alt="" class="d-none d-sm-block">
                     </div>
@@ -149,7 +149,7 @@
             </div>
 
             <div class="col-12 mt-5">
-                <div class="row justify-content-sm-center">
+                <div class="row justify-content-sm-center g-0">
                     <div class="col-1 col-sm-2 col-md-1 d-flex align-items-center pt-5">
                         <img src="asset/svg/icon_docker.svg" alt="" class="d-none d-sm-block">
                     </div>
@@ -184,7 +184,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <span>présence-agence</span>
+                        <span>En cours de développement...</span>
                     </div>
                     <div class="modal-body">
                         <!-- CAROUSEL -->
@@ -192,17 +192,15 @@
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                            <div class="carousel-inner">
-                                <!-- <div class="carousel-item m-auto active">
-                                <img class="w-100" src="asset/image/roxaneDo.jpg" alt="">
-                            </div> -->
-                            <div class="carousel-item active">
-                                <img class="w-100" src="asset/image/image1.png" alt="">
+                            <div class="carousel-item active ">
+                                <h2 class="glow ">WORK IN PROGRESS</h2>
+                                <!-- <img class="w-50" class="glow" src="asset/image/work-time.svg" alt=""> -->
                             </div>
                             <div class="carousel-item">
-                                <img class="w-100" src="asset/image/SansTitre.png" alt="">
+                                <h2 class="glow ">WORK IN PROGRESS</h2>
+
+                                <!-- <img class="w-100" src="asset/image/SansTitre.png" alt=""> -->
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
@@ -218,23 +216,23 @@
             </div>
         </div>
     </div>
-    <div class="row container-fluid container-lg m-auto ">
+    <div class="row container-fluid container-lg gx-0 gx-sm-3 ms-4 ms-sm-0">
         <div id="projects_title" class="col-12 h-25">
             <h2 class="my-5 py-5">PROJETS</h2>
         </div>
-        <div id="projects_container" class="row d-flex flex-column justify-content-center justify-content-lg-start">
+        <div id="projects_container" class="row d-flex flex-column align-items-center align-items-xl-start">
             <!-- UN PROJET -->
-            <div class="project col-8 col-lg-12 d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0 col-md-8 col-xl-12">
                 <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
                     <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
                 </svg>
-                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                <div class="project-title col-12 col-xl-4 pb-3 pb-xl-5 position-relative">
                     <p>2022-2023 | APSIDE</p>
                     <h6>présence-agence</h6>
                     <span>Espace de réservation en ligne</span>
                 </div>
                 <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
-                    <ul class="col-10 p-0 ">
+                    <ul class="col-12 col-sm-10 p-0 ">
                         <li>Conceptions UML et création de maquettes.</li>
                         <li>Développement front (<b class="glow">VueJs</b>) et back (<b class="glow">Spring 13, 17</b>).</li>
                         <li>Modifications de l’architecture des données.</li>
@@ -246,19 +244,18 @@
                 </div>
             </div>
 
-
             <!-- UN PROJET -->
-            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0 col-md-8 col-xl-12">
                 <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
                     <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
                 </svg>
-                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                <div class="project-title col-12 col-xl-4 pb-3 pb-xl-5 position-relative">
                     <p>2022-2023 | LE&CO</p>
                     <h6>sistemic</h6>
                     <span>Enterprise Resource Planning </span>
                 </div>
                 <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
-                    <ul class="col-10 p-0 ">
+                    <ul class="col-12 col-sm-10  p-0 ">
                         <li >Développement des nouvelles fonctionnalités (Nuxt2, AWS)</li>
                         <li>Maintenance et SAV de l’application.</li>
                         <li>Maquettage et stratégie commericale.</li>
@@ -271,17 +268,17 @@
             </div>
 
             <!-- UN PROJET -->
-            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0 col-md-8 col-xl-12">
                 <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
                     <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
                 </svg>
-                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                <div class="project-title col-12 col-xl-4 pb-3 pb-xl-5 position-relative">
                     <p>2022-2023</p>
                     <h6>picom</h6>
                     <span>Concept project</span>
                 </div>
                 <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
-                    <ul class="col-10 p-0 ">
+                    <ul class="col-12 col-sm-10  p-0 ">
                         <li>Créations des maquettes</li>
                         <li>Conception UML</li>
                         <li>Base MySql</li>
@@ -291,41 +288,40 @@
             </div>
 
             <!-- UN PROJET -->
-            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0 col-md-8 col-xl-12">
                 <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
                     <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
                 </svg>
-                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                <div class="project-title col-12 col-xl-4 pb-3 pb-xl-5 position-relative">
                     <p>2022-2023</p>
                     <h6>lanimealerie</h6>
                     <span>Concept project</span>
                 </div>
                 <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
-                    <ul class="col-10 p-0 ">
+                    <ul class="col-12 col-sm-10  p-0 ">
                         <li>Création des maquettes</li>
                         <li>Conception UML</li>
-                        <li>Développement front (Angular/Symfony) et back (Synfony).</li>
+                        <li>Développement front (Angular) et back (Symfony).</li>
                         <li>Base de données MySQL.</li>
                     </ul>
                     <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center d-none d-xl-block" src="asset/image/vue.svg" alt="" class="col-2">
                 </div>
             </div>
 
-
             <!-- UN PROJET -->
-            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0 col-md-8 col-xl-12">
                 <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
                     <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
                 </svg>
-                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                <div class="project-title col-12 col-xl-4 pb-3 pb-xl-5 position-relative">
                     <p>2022-2023</p>
                     <h6>tipi</h6>
                 </div>
                 <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
-                    <ul class="col-10 p-0 ">
+                    <ul class="col-12 col-sm-10  p-0 ">
                         <li>Création des maquettes</li>
                         <li>Conception UML</li>
-                        <li>Développement front (Angular/Symfony) et back (Synfony).</li>
+                        <li>Développement front (Angular) et back (Symfony).</li>
                         <li>Base de données MySQL.</li>
                     </ul>
                     <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center d-none d-xl-block" src="asset/image/vue.svg" alt="" class="col-2">
@@ -333,33 +329,32 @@
             </div>
 
             <!-- UN PROJET -->
-            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0">
+            <div class="project d-flex flex-column flex-xl-row mb-5 mb-xl-0 col-md-8 col-xl-12">
                 <svg  class="col-0 col-xl-1 mb-5 d-flex align-items-center d-none d-xl-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
                     <circle cx="5%" cy="50%" r="5" fill="#E2A812" fill-opacity="1"/>
                 </svg>
-                <div class="project-title col-12 col-xl-4 pb-5 position-relative">
+                <div class="project-title col-12 col-xl-4 pb-3 pb-xl-5 position-relative">
                     <p>2022-2023</p>
                     <h6>from scratch</h6>
                 </div>
                 <div class="project-detail col-12 col-xl-7 opa-0 d-flex flex-column flex-xl-row align-items-center">
-                    <ul class="col-10 p-0 ">
+                    <ul class="col-12 col-sm-10  p-0 ">
                         <li>Création des maquettes</li>
                         <li>Conception UML</li>
-                        <li>Développement front (Angular/Symfony) et back (Synfony).</li>
+                        <li>Développement front (Angular) et back (Symfony).</li>
                         <li>Base de données MySQL.</li>
                     </ul>
                     <img type="button" data-bs-toggle="modal" data-bs-target="#projectModal1" class="col-2 mb-5 d-flex align-items-center d-none d-xl-block" src="asset/image/vue.svg" alt="" class="col-2">
                 </div>
             </div>
-
         </div>
     </div>
 </section>
-<section id="contact" class="row justify-content-center">
+<section id="contact" class="row justify-content-center mt-sm-5">
     <div class="col-8 col-sm-6 d-flex justify-content-start justify-content-sm-end align-items-end">
-        <h2 class="me-5">ALLO ?</h2>
+        <div class="me-0 me-sm-5 mt-5 zeyada-neon sign">ALLO ?</div>
     </div>
-    <div class="col-8 col-sm-6 d-flex flex-column justify-content-end ps-4 pb-3 border-pink-left">
+    <div class="col-8 col-sm-6 d-flex flex-column justify-content-end ps-4 pb-3">
         <div class="d-flex">
             <a href="https://www.linkedin.com/in/roxane-donnat-b72142164/" target="_blank" class="d-flex align-items-center"><img src="asset/image/linkedin.svg" alt="" class="icon me-2"></a>
             <span class="d-flex align-items-center mx-2" >|</span>
@@ -368,7 +363,7 @@
         </div>
         <span class="my-2">roxane.donnat@gmail.com</span>
         <span class="my-2">07.83.32.27.03</span>
-        <span class="my-2">Clermont-Ferrand, France</span>
+        <span class="mt-2">Clermont-Ferrand, France</span>
     </div>
 </section>
 </body>
