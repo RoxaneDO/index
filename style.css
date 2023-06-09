@@ -601,6 +601,11 @@ span{
     transform: rotate(25deg);
     overflow-x: hidden;
  }
+
+ .border-pink-left::before{
+     content:none;
+ }
+
 }
 
 @media (min-width: 576px){
@@ -613,6 +618,7 @@ span{
         width: 600px;
     }
 }
+
 
 @media (max-width: 1140px){
     .project-detail {
@@ -627,6 +633,7 @@ span{
     li::marker {
         color: var(--fifth-color);
     }
+
 }
 
 @media (max-width: 992px){

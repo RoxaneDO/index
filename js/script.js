@@ -169,10 +169,7 @@ function parallaxe(element, vitesse, direction)
         $(window).scroll(function() {
 
             var scroll = $(window).scrollTop();
-
-            var widthW = onresize();
-
-            console.log(widthW)
+            var widthW = $(window).width();
 
             if(widthW > 980){
                 switch( direction )
