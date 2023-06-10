@@ -69,6 +69,10 @@ h6{
 }
 a {
     text-decoration: none;
+    color: var(--fifth-color);
+}
+a:hover {
+    color: var(--main-color);
 }
 ul {
     list-style: none;
