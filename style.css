@@ -172,6 +172,10 @@ span{
     height: 500px;
 }
 
+.modal{
+    backdrop-filter: blur(3px);
+}
+
 .modal-content {
     background-color: #3c39551a;
 }
